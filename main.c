@@ -5,9 +5,16 @@
 
 void mostra_frase(char *frase);
 
-int main(int argc, char **argv)
+uint8_t main(uint8_t argc, char **argv)
 {
-    printf("Hello World!\n");
+    if(argc > 1)
+    {
+        printf("%s \n", argv[1]);
+    }
+    else
+    {
+        printf("%d \n", argc);
+    }
     return SUCESS;
 }
 
