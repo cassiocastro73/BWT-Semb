@@ -1,0 +1,1 @@
+/usr/bin/cc CMakeFiles/btw.dir/FileManager/file_manager.c.o CMakeFiles/btw.dir/main.c.o -o btw 

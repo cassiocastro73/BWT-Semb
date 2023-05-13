@@ -1,20 +1,11 @@
 #include <stdio.h>
 #include <stdint.h>
-
+#include "FileManager/file_manager.h"
 #define SUCESS 0
-
-void mostra_frase(char *frase);
 
 uint8_t main(uint8_t argc, char **argv)
 {
-    if(argc > 1)
-    {
-        printf("%s \n", argv[1]);
-    }
-    else
-    {
-        printf("%d \n", argc);
-    }
+   mostra_alguma_coisa("Hello");
     return SUCESS;
 }
 
