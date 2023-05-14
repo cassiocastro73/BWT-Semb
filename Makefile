@@ -129,6 +129,30 @@ btw/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/btw.dir/build.make CMakeFiles/btw.dir/build
 .PHONY : btw/fast
 
+ApplicationArgs/app_args.o: ApplicationArgs/app_args.c.o
+.PHONY : ApplicationArgs/app_args.o
+
+# target to build an object file
+ApplicationArgs/app_args.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/btw.dir/build.make CMakeFiles/btw.dir/ApplicationArgs/app_args.c.o
+.PHONY : ApplicationArgs/app_args.c.o
+
+ApplicationArgs/app_args.i: ApplicationArgs/app_args.c.i
+.PHONY : ApplicationArgs/app_args.i
+
+# target to preprocess a source file
+ApplicationArgs/app_args.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/btw.dir/build.make CMakeFiles/btw.dir/ApplicationArgs/app_args.c.i
+.PHONY : ApplicationArgs/app_args.c.i
+
+ApplicationArgs/app_args.s: ApplicationArgs/app_args.c.s
+.PHONY : ApplicationArgs/app_args.s
+
+# target to generate assembly for a file
+ApplicationArgs/app_args.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/btw.dir/build.make CMakeFiles/btw.dir/ApplicationArgs/app_args.c.s
+.PHONY : ApplicationArgs/app_args.c.s
+
 FileManager/file_manager.o: FileManager/file_manager.c.o
 .PHONY : FileManager/file_manager.o
 
@@ -186,6 +210,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... btw"
+	@echo "... ApplicationArgs/app_args.o"
+	@echo "... ApplicationArgs/app_args.i"
+	@echo "... ApplicationArgs/app_args.s"
 	@echo "... FileManager/file_manager.o"
 	@echo "... FileManager/file_manager.i"
 	@echo "... FileManager/file_manager.s"

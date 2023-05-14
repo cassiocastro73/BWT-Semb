@@ -5,5 +5,6 @@ message("Todas as configurações foram feitas")
 add_executable(
     btw
     FileManager/file_manager.c
+    ApplicationArgs/app_args.c
     main.c
 )

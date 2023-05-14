@@ -27,7 +27,12 @@ CMakeFiles/btw.dir/FileManager/file_manager.c.o: FileManager/file_manager.c \
   /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
   /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
   /usr/include/x86_64-linux-gnu/bits/floatn.h \
-  /usr/include/x86_64-linux-gnu/bits/floatn-common.h
+  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h \
+  /usr/include/stdint.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h
 
 CMakeFiles/btw.dir/main.c.o: main.c \
   /usr/include/stdc-predef.h \
@@ -62,6 +67,8 @@ CMakeFiles/btw.dir/main.c.o: main.c \
   /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
   FileManager/file_manager.h
 
+
+main.c:
 
 /usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
 
@@ -99,9 +106,9 @@ FileManager/file_manager.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
 
-/usr/include/stdint.h:
-
 /usr/include/x86_64-linux-gnu/bits/timesize.h:
+
+/usr/include/stdint.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h:
 
@@ -124,7 +131,5 @@ FileManager/file_manager.h:
 /usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
 
 /usr/include/x86_64-linux-gnu/bits/floatn.h:
-
-main.c:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h:

@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/jontz/Documents/Git/BWT-Semb/ApplicationArgs/app_args.c" "CMakeFiles/btw.dir/ApplicationArgs/app_args.c.o" "gcc" "CMakeFiles/btw.dir/ApplicationArgs/app_args.c.o.d"
   "/home/jontz/Documents/Git/BWT-Semb/FileManager/file_manager.c" "CMakeFiles/btw.dir/FileManager/file_manager.c.o" "gcc" "CMakeFiles/btw.dir/FileManager/file_manager.c.o.d"
   "/home/jontz/Documents/Git/BWT-Semb/main.c" "CMakeFiles/btw.dir/main.c.o" "gcc" "CMakeFiles/btw.dir/main.c.o.d"
   )

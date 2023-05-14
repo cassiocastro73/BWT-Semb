@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/btw.dir/ApplicationArgs/app_args.c.o"
+  "CMakeFiles/btw.dir/ApplicationArgs/app_args.c.o.d"
   "CMakeFiles/btw.dir/FileManager/file_manager.c.o"
   "CMakeFiles/btw.dir/FileManager/file_manager.c.o.d"
   "CMakeFiles/btw.dir/main.c.o"
