@@ -6,7 +6,7 @@
 uint8_t main(uint8_t argc, char **argv)
 {
     //mostra_alguma_coisa("Hello");
-    File.read("Olaaa");
+    File.read("texto.txt");
     return SUCESS;
 }
 
