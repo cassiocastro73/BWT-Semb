@@ -5,8 +5,9 @@
 
 uint8_t main(uint8_t argc, char **argv)
 {
-    uint8_t read_ret = File.read("texto.txt");
-    printf("%s \n",file_text);
+    // uint8_t read_ret = File.read("texto.txt");
+    // printf("%s \n",file_text);
+    File.write("Ola Internet!","texto.txt");
     return SUCESS;
 }
 

@@ -35,7 +35,11 @@ CMakeFiles/bwt.dir/FileManager/file_manager.c.o: FileManager/file_manager.c \
   /usr/include/stdint.h \
   /usr/include/x86_64-linux-gnu/bits/wchar.h \
   /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
-  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h
+  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+  /usr/include/string.h \
+  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
+  /usr/include/strings.h
 
 CMakeFiles/bwt.dir/main.c.o: main.c \
   /usr/include/stdc-predef.h \
@@ -77,6 +81,8 @@ main.c:
 
 /usr/include/features-time64.h:
 
+/usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
+
 /usr/include/x86_64-linux-gnu/bits/wordsize.h:
 
 /usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
@@ -87,11 +93,15 @@ main.c:
 
 /usr/include/stdio.h:
 
+/usr/include/strings.h:
+
 /usr/include/x86_64-linux-gnu/bits/floatn-common.h:
 
 /usr/include/x86_64-linux-gnu/bits/long-double.h:
 
 FileManager/file_manager.c:
+
+/usr/include/string.h:
 
 /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
 
@@ -120,6 +130,8 @@ FileManager/file_manager.h:
 /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h:
 
 /usr/include/x86_64-linux-gnu/bits/typesizes.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h:
 

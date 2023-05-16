@@ -1,5 +1,5 @@
 #include "file_manager.h"
-
+#include "string.h"
 
 char file_text[MAX_FILE_SIZE];
 
@@ -7,7 +7,7 @@ char file_text[MAX_FILE_SIZE];
  *  @param[in] file_name The name of the file to be read
  *  @return @p Success if the reading was successful, otherwise, it returns @p ERROR
 */
-uint8_t read_file(char *file_name)
+uint8_t read_file(const char *file_name)
 {
     size_t file_size = 0;
    
@@ -47,14 +47,28 @@ uint8_t read_file(char *file_name)
  *  @param[in] file_name file to store the data
  *  @return WRITE_SUCESS if writing was successful, otherwise WRITE_ERROR
 */
-// uint8_t write_file(const char* input_text,const char * file_name)
-// {
-//     FILE *file;
-//     file = fopen()
-// }
+uint8_t write_file(const char* input_text,const char * file_name)
+{
+    size_t string_size = strlen(input_text);
+    FILE *file;
+    file = fopen(file_name,"a");
+
+    if(file == NULL)
+    {
+        return FILE_WRITE_ERROR;
+    }
+
+    fwrite(input_text,sizeof(char),string_size,file);
+    fclose(file);
+    #ifdef DEBUG
+        read_file(file_name);
+    #endif
+    return FILE_WRITE_SUCESS;
+}
 
 
 file_manager_t File =
 {
     .read = read_file,
+    .write = write_file
 };
