@@ -1,7 +1,7 @@
 CMakeFiles/bwt.dir/FileManager/file_manager.c.o: \
- /home/castro/BWT-Semb/BWT-Semb/FileManager/file_manager.c \
+ /home/jontz/Documents/Git/BWT-Semb/FileManager/file_manager.c \
  /usr/include/stdc-predef.h \
- /home/castro/BWT-Semb/BWT-Semb/FileManager/file_manager.h \
+ /home/jontz/Documents/Git/BWT-Semb/FileManager/file_manager.h \
  /usr/include/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
