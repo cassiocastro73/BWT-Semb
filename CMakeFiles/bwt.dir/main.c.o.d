@@ -1,4 +1,4 @@
-CMakeFiles/bwt.dir/main.c.o: /home/jontz/Documents/Git/BWT-Semb/main.c \
+CMakeFiles/bwt.dir/main.c.o: /home/castro/BWT-Semb/BWT-Semb/main.c \
  /usr/include/stdc-predef.h /usr/include/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -26,4 +26,4 @@ CMakeFiles/bwt.dir/main.c.o: /home/jontz/Documents/Git/BWT-Semb/main.c \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
- /home/jontz/Documents/Git/BWT-Semb/FileManager/file_manager.h
+ /home/castro/BWT-Semb/BWT-Semb/FileManager/file_manager.h

@@ -8,9 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/jontz/Documents/Git/BWT-Semb/ApplicationArgs/app_args.c" "CMakeFiles/bwt.dir/ApplicationArgs/app_args.c.o" "gcc" "CMakeFiles/bwt.dir/ApplicationArgs/app_args.c.o.d"
-  "/home/jontz/Documents/Git/BWT-Semb/FileManager/file_manager.c" "CMakeFiles/bwt.dir/FileManager/file_manager.c.o" "gcc" "CMakeFiles/bwt.dir/FileManager/file_manager.c.o.d"
-  "/home/jontz/Documents/Git/BWT-Semb/main.c" "CMakeFiles/bwt.dir/main.c.o" "gcc" "CMakeFiles/bwt.dir/main.c.o.d"
+  "/home/castro/BWT-Semb/BWT-Semb/ApplicationArgs/app_args.c" "CMakeFiles/bwt.dir/ApplicationArgs/app_args.c.o" "gcc" "CMakeFiles/bwt.dir/ApplicationArgs/app_args.c.o.d"
+  "/home/castro/BWT-Semb/BWT-Semb/FileManager/file_manager.c" "CMakeFiles/bwt.dir/FileManager/file_manager.c.o" "gcc" "CMakeFiles/bwt.dir/FileManager/file_manager.c.o.d"
+  "/home/castro/BWT-Semb/BWT-Semb/main.c" "CMakeFiles/bwt.dir/main.c.o" "gcc" "CMakeFiles/bwt.dir/main.c.o.d"
   )
 
 # Targets to which this target links.

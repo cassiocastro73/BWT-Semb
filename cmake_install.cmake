@@ -1,4 +1,4 @@
-# Install script for directory: /home/jontz/Documents/Git/BWT-Semb
+# Install script for directory: /home/castro/BWT-Semb/BWT-Semb
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/jontz/Documents/Git/BWT-Semb/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/castro/BWT-Semb/BWT-Semb/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
