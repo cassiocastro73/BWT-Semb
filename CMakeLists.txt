@@ -3,7 +3,7 @@ project(BWT_SEMB VERSION 1.0)
 set(CMAKE_C_STANDARD 17)
 message("Todas as configurações foram feitas")
 add_executable(
-    btw
+    bwt
     FileManager/file_manager.c
     ApplicationArgs/app_args.c
     main.c

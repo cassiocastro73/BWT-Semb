@@ -1,9 +1,7 @@
 #include "file_manager.h"
 
-#define FILE_READ_ERROR  (1)
-#define FILE_READ_SUCESS (0)
-#define valor "olamundo1aaaaaaaaaaaaaabbbbbeeee1"
 
+char file_text[MAX_FILE_SIZE];
 
 /** @brief Reads a file and returns its contents 
  *  @param[in] file_name The name of the file to be read
@@ -12,30 +10,49 @@
 uint8_t read_file(char *file_name)
 {
     size_t file_size = 0;
-    
-    FILE *arq;
-    arq = fopen("texto.txt","rb");
-
-
-    if(arq == NULL )
+   
+    FILE *arch;
+    arch = fopen("texto.txt","rb");
+    if(arch == NULL )
     {
-        printf("Arquivo nao existe");
+#ifdef DEBUG
+    printf("Arquivo não encontrado/corrompido\n");
+#endif
+        return FILE_READ_ERROR;
     }
+#ifdef DEBUG
+    printf("Executando procedimento de captura de tamanho de arquivo...\n " );
+#endif
+    fseek(arch,0,SEEK_END);
+    file_size = ftell(arch);
+    fclose(arch);
 
-    /* Verifica o tamanho do arquivo */
-    fseek(arq,0,SEEK_END);
-    file_size = ftell(arq);
-    fclose(arq);
-    printf(" o tamanho do arquivo é : %ld \n",file_size);
-    /* Cria o leitor do arquivo baseado no valor adquirido*/
-    arq = fopen("texto.txt","rb");
-    char file_text[file_size];
-    fread(file_text,sizeof(char),file_size,arq);
-    printf("%s", file_text);
-    fclose(arq);
-
-    return 0;
+    arch = fopen("texto.txt","rb");
+   
+    fread(file_text,sizeof(char),file_size,arch);
+#ifdef DEBUG
+    char verify;
+    for(int i = 0; i < file_size; i++)
+    {
+        verify = file_text[i];
+        printf("%c", verify);
+    }
+#endif
+    fclose(arch);
+    return FILE_READ_SUCESS;
 }
+
+/** @brief Write input data to a txt file
+ *  @param[in] input_text data string to be written to txt file
+ *  @param[in] file_name file to store the data
+ *  @return WRITE_SUCESS if writing was successful, otherwise WRITE_ERROR
+*/
+// uint8_t write_file(const char* input_text,const char * file_name)
+// {
+//     FILE *file;
+//     file = fopen()
+// }
+
 
 file_manager_t File =
 {

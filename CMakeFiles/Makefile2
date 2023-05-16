@@ -63,7 +63,7 @@ CMAKE_BINARY_DIR = /home/jontz/Documents/Git/BWT-Semb
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/btw.dir/all
+all: CMakeFiles/bwt.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -71,34 +71,34 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/btw.dir/clean
+clean: CMakeFiles/bwt.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/btw.dir
+# Target rules for target CMakeFiles/bwt.dir
 
 # All Build rule for target.
-CMakeFiles/btw.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/btw.dir/build.make CMakeFiles/btw.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/btw.dir/build.make CMakeFiles/btw.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jontz/Documents/Git/BWT-Semb/CMakeFiles --progress-num=1,2,3,4 "Built target btw"
-.PHONY : CMakeFiles/btw.dir/all
+CMakeFiles/bwt.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bwt.dir/build.make CMakeFiles/bwt.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bwt.dir/build.make CMakeFiles/bwt.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jontz/Documents/Git/BWT-Semb/CMakeFiles --progress-num=1,2,3,4 "Built target bwt"
+.PHONY : CMakeFiles/bwt.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/btw.dir/rule: cmake_check_build_system
+CMakeFiles/bwt.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/jontz/Documents/Git/BWT-Semb/CMakeFiles 4
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/btw.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/bwt.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/jontz/Documents/Git/BWT-Semb/CMakeFiles 0
-.PHONY : CMakeFiles/btw.dir/rule
+.PHONY : CMakeFiles/bwt.dir/rule
 
 # Convenience name for target.
-btw: CMakeFiles/btw.dir/rule
-.PHONY : btw
+bwt: CMakeFiles/bwt.dir/rule
+.PHONY : bwt
 
 # clean rule for target.
-CMakeFiles/btw.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/btw.dir/build.make CMakeFiles/btw.dir/clean
-.PHONY : CMakeFiles/btw.dir/clean
+CMakeFiles/bwt.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bwt.dir/build.make CMakeFiles/bwt.dir/clean
+.PHONY : CMakeFiles/bwt.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

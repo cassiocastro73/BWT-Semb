@@ -117,24 +117,24 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named btw
+# Target rules for targets named bwt
 
 # Build rule for target.
-btw: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 btw
-.PHONY : btw
+bwt: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 bwt
+.PHONY : bwt
 
 # fast build rule for target.
-btw/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/btw.dir/build.make CMakeFiles/btw.dir/build
-.PHONY : btw/fast
+bwt/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bwt.dir/build.make CMakeFiles/bwt.dir/build
+.PHONY : bwt/fast
 
 ApplicationArgs/app_args.o: ApplicationArgs/app_args.c.o
 .PHONY : ApplicationArgs/app_args.o
 
 # target to build an object file
 ApplicationArgs/app_args.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/btw.dir/build.make CMakeFiles/btw.dir/ApplicationArgs/app_args.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bwt.dir/build.make CMakeFiles/bwt.dir/ApplicationArgs/app_args.c.o
 .PHONY : ApplicationArgs/app_args.c.o
 
 ApplicationArgs/app_args.i: ApplicationArgs/app_args.c.i
@@ -142,7 +142,7 @@ ApplicationArgs/app_args.i: ApplicationArgs/app_args.c.i
 
 # target to preprocess a source file
 ApplicationArgs/app_args.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/btw.dir/build.make CMakeFiles/btw.dir/ApplicationArgs/app_args.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bwt.dir/build.make CMakeFiles/bwt.dir/ApplicationArgs/app_args.c.i
 .PHONY : ApplicationArgs/app_args.c.i
 
 ApplicationArgs/app_args.s: ApplicationArgs/app_args.c.s
@@ -150,7 +150,7 @@ ApplicationArgs/app_args.s: ApplicationArgs/app_args.c.s
 
 # target to generate assembly for a file
 ApplicationArgs/app_args.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/btw.dir/build.make CMakeFiles/btw.dir/ApplicationArgs/app_args.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bwt.dir/build.make CMakeFiles/bwt.dir/ApplicationArgs/app_args.c.s
 .PHONY : ApplicationArgs/app_args.c.s
 
 FileManager/file_manager.o: FileManager/file_manager.c.o
@@ -158,7 +158,7 @@ FileManager/file_manager.o: FileManager/file_manager.c.o
 
 # target to build an object file
 FileManager/file_manager.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/btw.dir/build.make CMakeFiles/btw.dir/FileManager/file_manager.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bwt.dir/build.make CMakeFiles/bwt.dir/FileManager/file_manager.c.o
 .PHONY : FileManager/file_manager.c.o
 
 FileManager/file_manager.i: FileManager/file_manager.c.i
@@ -166,7 +166,7 @@ FileManager/file_manager.i: FileManager/file_manager.c.i
 
 # target to preprocess a source file
 FileManager/file_manager.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/btw.dir/build.make CMakeFiles/btw.dir/FileManager/file_manager.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bwt.dir/build.make CMakeFiles/bwt.dir/FileManager/file_manager.c.i
 .PHONY : FileManager/file_manager.c.i
 
 FileManager/file_manager.s: FileManager/file_manager.c.s
@@ -174,7 +174,7 @@ FileManager/file_manager.s: FileManager/file_manager.c.s
 
 # target to generate assembly for a file
 FileManager/file_manager.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/btw.dir/build.make CMakeFiles/btw.dir/FileManager/file_manager.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bwt.dir/build.make CMakeFiles/bwt.dir/FileManager/file_manager.c.s
 .PHONY : FileManager/file_manager.c.s
 
 main.o: main.c.o
@@ -182,7 +182,7 @@ main.o: main.c.o
 
 # target to build an object file
 main.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/btw.dir/build.make CMakeFiles/btw.dir/main.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bwt.dir/build.make CMakeFiles/bwt.dir/main.c.o
 .PHONY : main.c.o
 
 main.i: main.c.i
@@ -190,7 +190,7 @@ main.i: main.c.i
 
 # target to preprocess a source file
 main.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/btw.dir/build.make CMakeFiles/btw.dir/main.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bwt.dir/build.make CMakeFiles/bwt.dir/main.c.i
 .PHONY : main.c.i
 
 main.s: main.c.s
@@ -198,7 +198,7 @@ main.s: main.c.s
 
 # target to generate assembly for a file
 main.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/btw.dir/build.make CMakeFiles/btw.dir/main.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bwt.dir/build.make CMakeFiles/bwt.dir/main.c.s
 .PHONY : main.c.s
 
 # Help Target
@@ -209,7 +209,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... btw"
+	@echo "... bwt"
 	@echo "... ApplicationArgs/app_args.o"
 	@echo "... ApplicationArgs/app_args.i"
 	@echo "... ApplicationArgs/app_args.s"

@@ -1,13 +1,16 @@
 #ifndef FILE_MANAGER_H
 #define FILE_MANAGER_H
-
+//#define DEBUG
 #include <stdio.h>
 #include <stdint.h>
 
-uint8_t mostra_alguma_coisa(char *valor);
+#define MAX_FILE_SIZE   (1000)
+#define FILE_READ_ERROR  (1)
+#define FILE_READ_SUCESS (0)
 
-typedef uint8_t (*file_read_t)(char *);
-typedef uint8_t (*file_write_t)(char *,char *);
+
+typedef uint8_t (*file_read_t)  (char *);
+typedef uint8_t (*file_write_t) (char *,char *);
 
 typedef struct
 {
@@ -16,7 +19,7 @@ typedef struct
 }file_manager_t;
 
 extern file_manager_t File;
-
+extern char file_text[MAX_FILE_SIZE];
 
 
 #endif /* FILE_MANAGER_H */
