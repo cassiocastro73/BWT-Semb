@@ -1,19 +1,14 @@
 #include <stdio.h>
 #include <stdint.h>
+//#include "file_manager.h"
+#include "BWT/bwt.h"
 #include "FileManager/file_manager.h"
 #define SUCESS 0
 
 uint8_t main(uint8_t argc, char **argv)
 {
-    File.write("Ola Internet!","texto.txt");
+    File.read("texto.txt");
+    bwt(file_text);
     return SUCESS;
 }
 
-/*! @brief Essa função tem como objetivo fazer um print do que você por dentro
-*   @param[in] Frase é a frase que irá ser imprimida no termial
-*   @return não existem parametros de retorno
-*/
-void mostra_frase(char *frase)
-{
-    printf("%s", frase);
-}

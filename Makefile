@@ -153,6 +153,30 @@ ApplicationArgs/app_args.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bwt.dir/build.make CMakeFiles/bwt.dir/ApplicationArgs/app_args.c.s
 .PHONY : ApplicationArgs/app_args.c.s
 
+BWT/bwt.o: BWT/bwt.c.o
+.PHONY : BWT/bwt.o
+
+# target to build an object file
+BWT/bwt.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bwt.dir/build.make CMakeFiles/bwt.dir/BWT/bwt.c.o
+.PHONY : BWT/bwt.c.o
+
+BWT/bwt.i: BWT/bwt.c.i
+.PHONY : BWT/bwt.i
+
+# target to preprocess a source file
+BWT/bwt.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bwt.dir/build.make CMakeFiles/bwt.dir/BWT/bwt.c.i
+.PHONY : BWT/bwt.c.i
+
+BWT/bwt.s: BWT/bwt.c.s
+.PHONY : BWT/bwt.s
+
+# target to generate assembly for a file
+BWT/bwt.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bwt.dir/build.make CMakeFiles/bwt.dir/BWT/bwt.c.s
+.PHONY : BWT/bwt.c.s
+
 FileManager/file_manager.o: FileManager/file_manager.c.o
 .PHONY : FileManager/file_manager.o
 
@@ -213,6 +237,9 @@ help:
 	@echo "... ApplicationArgs/app_args.o"
 	@echo "... ApplicationArgs/app_args.i"
 	@echo "... ApplicationArgs/app_args.s"
+	@echo "... BWT/bwt.o"
+	@echo "... BWT/bwt.i"
+	@echo "... BWT/bwt.s"
 	@echo "... FileManager/file_manager.o"
 	@echo "... FileManager/file_manager.i"
 	@echo "... FileManager/file_manager.s"

@@ -7,7 +7,7 @@ char file_text[MAX_FILE_SIZE];
  *  @param[in] file_name The name of the file to be read
  *  @return @p Success if the reading was successful, otherwise, it returns @p ERROR
 */
-uint8_t read_file(const char *file_name)
+uint8_t read_file(char *file_name)
 {
     size_t file_size = 0;
    
@@ -26,7 +26,9 @@ uint8_t read_file(const char *file_name)
     fseek(arch,0,SEEK_END);
     file_size = ftell(arch);
     fclose(arch);
-
+#ifdef DEBUG
+        printf("o arquivo tem [%ld] caracteres \n", file_size);
+#endif
     arch = fopen("texto.txt","rb");
    
     fread(file_text,sizeof(char),file_size,arch);
@@ -47,7 +49,7 @@ uint8_t read_file(const char *file_name)
  *  @param[in] file_name file to store the data
  *  @return WRITE_SUCESS if writing was successful, otherwise WRITE_ERROR
 */
-uint8_t write_file(const char* input_text,const char * file_name)
+uint8_t write_file( char* input_text, char * file_name)
 {
     size_t string_size = strlen(input_text);
     FILE *file;
