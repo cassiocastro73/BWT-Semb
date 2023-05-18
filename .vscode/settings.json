@@ -5,6 +5,8 @@
         "file_manager.h": "c",
         "stdio.h": "c",
         "bwt.h": "c",
-        "string.h": "c"
+        "string.h": "c",
+        "algorithm": "c",
+        "stdlib.h": "c"
     }
 }

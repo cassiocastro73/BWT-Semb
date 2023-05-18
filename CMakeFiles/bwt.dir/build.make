@@ -69,19 +69,19 @@ include CMakeFiles/bwt.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/bwt.dir/flags.make
 
-CMakeFiles/bwt.dir/FileManager/file_manager.c.o: CMakeFiles/bwt.dir/flags.make
-CMakeFiles/bwt.dir/FileManager/file_manager.c.o: FileManager/file_manager.c
-CMakeFiles/bwt.dir/FileManager/file_manager.c.o: CMakeFiles/bwt.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jontz/Documents/Git/BWT-Semb/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/bwt.dir/FileManager/file_manager.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/bwt.dir/FileManager/file_manager.c.o -MF CMakeFiles/bwt.dir/FileManager/file_manager.c.o.d -o CMakeFiles/bwt.dir/FileManager/file_manager.c.o -c /home/jontz/Documents/Git/BWT-Semb/FileManager/file_manager.c
+CMakeFiles/bwt.dir/BWT/file_manager.c.o: CMakeFiles/bwt.dir/flags.make
+CMakeFiles/bwt.dir/BWT/file_manager.c.o: BWT/file_manager.c
+CMakeFiles/bwt.dir/BWT/file_manager.c.o: CMakeFiles/bwt.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jontz/Documents/Git/BWT-Semb/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/bwt.dir/BWT/file_manager.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/bwt.dir/BWT/file_manager.c.o -MF CMakeFiles/bwt.dir/BWT/file_manager.c.o.d -o CMakeFiles/bwt.dir/BWT/file_manager.c.o -c /home/jontz/Documents/Git/BWT-Semb/BWT/file_manager.c
 
-CMakeFiles/bwt.dir/FileManager/file_manager.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/bwt.dir/FileManager/file_manager.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jontz/Documents/Git/BWT-Semb/FileManager/file_manager.c > CMakeFiles/bwt.dir/FileManager/file_manager.c.i
+CMakeFiles/bwt.dir/BWT/file_manager.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/bwt.dir/BWT/file_manager.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jontz/Documents/Git/BWT-Semb/BWT/file_manager.c > CMakeFiles/bwt.dir/BWT/file_manager.c.i
 
-CMakeFiles/bwt.dir/FileManager/file_manager.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/bwt.dir/FileManager/file_manager.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jontz/Documents/Git/BWT-Semb/FileManager/file_manager.c -o CMakeFiles/bwt.dir/FileManager/file_manager.c.s
+CMakeFiles/bwt.dir/BWT/file_manager.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/bwt.dir/BWT/file_manager.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jontz/Documents/Git/BWT-Semb/BWT/file_manager.c -o CMakeFiles/bwt.dir/BWT/file_manager.c.s
 
 CMakeFiles/bwt.dir/ApplicationArgs/app_args.c.o: CMakeFiles/bwt.dir/flags.make
 CMakeFiles/bwt.dir/ApplicationArgs/app_args.c.o: ApplicationArgs/app_args.c
@@ -127,7 +127,7 @@ CMakeFiles/bwt.dir/main.c.s: cmake_force
 
 # Object files for target bwt
 bwt_OBJECTS = \
-"CMakeFiles/bwt.dir/FileManager/file_manager.c.o" \
+"CMakeFiles/bwt.dir/BWT/file_manager.c.o" \
 "CMakeFiles/bwt.dir/ApplicationArgs/app_args.c.o" \
 "CMakeFiles/bwt.dir/BWT/bwt.c.o" \
 "CMakeFiles/bwt.dir/main.c.o"
@@ -135,7 +135,7 @@ bwt_OBJECTS = \
 # External object files for target bwt
 bwt_EXTERNAL_OBJECTS =
 
-bwt: CMakeFiles/bwt.dir/FileManager/file_manager.c.o
+bwt: CMakeFiles/bwt.dir/BWT/file_manager.c.o
 bwt: CMakeFiles/bwt.dir/ApplicationArgs/app_args.c.o
 bwt: CMakeFiles/bwt.dir/BWT/bwt.c.o
 bwt: CMakeFiles/bwt.dir/main.c.o

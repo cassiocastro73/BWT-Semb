@@ -177,29 +177,29 @@ BWT/bwt.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bwt.dir/build.make CMakeFiles/bwt.dir/BWT/bwt.c.s
 .PHONY : BWT/bwt.c.s
 
-FileManager/file_manager.o: FileManager/file_manager.c.o
-.PHONY : FileManager/file_manager.o
+BWT/file_manager.o: BWT/file_manager.c.o
+.PHONY : BWT/file_manager.o
 
 # target to build an object file
-FileManager/file_manager.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/bwt.dir/build.make CMakeFiles/bwt.dir/FileManager/file_manager.c.o
-.PHONY : FileManager/file_manager.c.o
+BWT/file_manager.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bwt.dir/build.make CMakeFiles/bwt.dir/BWT/file_manager.c.o
+.PHONY : BWT/file_manager.c.o
 
-FileManager/file_manager.i: FileManager/file_manager.c.i
-.PHONY : FileManager/file_manager.i
+BWT/file_manager.i: BWT/file_manager.c.i
+.PHONY : BWT/file_manager.i
 
 # target to preprocess a source file
-FileManager/file_manager.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/bwt.dir/build.make CMakeFiles/bwt.dir/FileManager/file_manager.c.i
-.PHONY : FileManager/file_manager.c.i
+BWT/file_manager.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bwt.dir/build.make CMakeFiles/bwt.dir/BWT/file_manager.c.i
+.PHONY : BWT/file_manager.c.i
 
-FileManager/file_manager.s: FileManager/file_manager.c.s
-.PHONY : FileManager/file_manager.s
+BWT/file_manager.s: BWT/file_manager.c.s
+.PHONY : BWT/file_manager.s
 
 # target to generate assembly for a file
-FileManager/file_manager.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/bwt.dir/build.make CMakeFiles/bwt.dir/FileManager/file_manager.c.s
-.PHONY : FileManager/file_manager.c.s
+BWT/file_manager.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bwt.dir/build.make CMakeFiles/bwt.dir/BWT/file_manager.c.s
+.PHONY : BWT/file_manager.c.s
 
 main.o: main.c.o
 .PHONY : main.o
@@ -240,9 +240,9 @@ help:
 	@echo "... BWT/bwt.o"
 	@echo "... BWT/bwt.i"
 	@echo "... BWT/bwt.s"
-	@echo "... FileManager/file_manager.o"
-	@echo "... FileManager/file_manager.i"
-	@echo "... FileManager/file_manager.s"
+	@echo "... BWT/file_manager.o"
+	@echo "... BWT/file_manager.i"
+	@echo "... BWT/file_manager.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

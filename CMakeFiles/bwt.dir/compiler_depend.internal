@@ -69,11 +69,12 @@ CMakeFiles/bwt.dir/BWT/bwt.c.o
  /usr/include/x86_64-linux-gnu/bits/types/FILE.h
  /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h
  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h
+ /home/jontz/Documents/Git/BWT-Semb/BWT/file_manager.h
 
-CMakeFiles/bwt.dir/FileManager/file_manager.c.o
- /home/jontz/Documents/Git/BWT-Semb/FileManager/file_manager.c
+CMakeFiles/bwt.dir/BWT/file_manager.c.o
+ /home/jontz/Documents/Git/BWT-Semb/BWT/file_manager.c
  /usr/include/stdc-predef.h
- /home/jontz/Documents/Git/BWT-Semb/FileManager/file_manager.h
+ /home/jontz/Documents/Git/BWT-Semb/BWT/file_manager.h
  /usr/include/stdio.h
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h
  /usr/include/features.h
@@ -172,5 +173,5 @@ CMakeFiles/bwt.dir/main.c.o
  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h
  /usr/include/alloca.h
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h
- /home/jontz/Documents/Git/BWT-Semb/FileManager/file_manager.h
+ /home/jontz/Documents/Git/BWT-Semb/BWT/file_manager.h
 

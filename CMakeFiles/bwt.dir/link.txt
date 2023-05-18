@@ -1,1 +1,1 @@
-/usr/bin/cc CMakeFiles/bwt.dir/FileManager/file_manager.c.o CMakeFiles/bwt.dir/ApplicationArgs/app_args.c.o CMakeFiles/bwt.dir/BWT/bwt.c.o CMakeFiles/bwt.dir/main.c.o -o bwt 
+/usr/bin/cc CMakeFiles/bwt.dir/BWT/file_manager.c.o CMakeFiles/bwt.dir/ApplicationArgs/app_args.c.o CMakeFiles/bwt.dir/BWT/bwt.c.o CMakeFiles/bwt.dir/main.c.o -o bwt 

@@ -66,11 +66,12 @@ CMakeFiles/bwt.dir/BWT/bwt.c.o: BWT/bwt.c \
   /usr/include/x86_64-linux-gnu/bits/types/__FILE.h \
   /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
-  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h
+  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
+  BWT/file_manager.h
 
-CMakeFiles/bwt.dir/FileManager/file_manager.c.o: FileManager/file_manager.c \
+CMakeFiles/bwt.dir/BWT/file_manager.c.o: BWT/file_manager.c \
   /usr/include/stdc-predef.h \
-  FileManager/file_manager.h \
+  BWT/file_manager.h \
   /usr/include/stdio.h \
   /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
   /usr/include/features.h \
@@ -168,10 +169,8 @@ CMakeFiles/bwt.dir/main.c.o: main.c \
   /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
   /usr/include/alloca.h \
   /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
-  FileManager/file_manager.h
+  BWT/file_manager.h
 
-
-FileManager/file_manager.h:
 
 /usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
 
@@ -179,13 +178,13 @@ FileManager/file_manager.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/FILE.h:
 
+BWT/file_manager.c:
+
 ApplicationArgs/app_args.c:
 
 /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
 
 /usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
-
-FileManager/file_manager.c:
 
 /usr/include/x86_64-linux-gnu/bits/wchar.h:
 
@@ -238,6 +237,8 @@ BWT/bwt.h:
 /usr/include/features.h:
 
 /usr/include/x86_64-linux-gnu/bits/timesize.h:
+
+BWT/file_manager.h:
 
 /usr/include/stdint.h:
 
