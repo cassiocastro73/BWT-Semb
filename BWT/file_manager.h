@@ -4,7 +4,7 @@
 #include <stdio.h>
 #include <stdint.h>
 
-#define MAX_FILE_SIZE    (1200)
+#define MAX_FILE_SIZE    (2000)
 #define FILE_READ_ERROR   (1)
 #define FILE_READ_SUCESS  (0)
 #define FILE_WRITE_SUCESS (0)

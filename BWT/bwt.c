@@ -32,35 +32,19 @@ uint8_t bwt(char *input_text)
         vetor_aux[0] = lastChar;
         strcpy(matriz_bwt[i],vetor_aux);
         File.write("\n","texto.txt");
-        File.write(vetor_aux,"texto.txt");
-
-        for(int k = 0 ; k < 10 ; k++)
-        {
-            for(int l = 0; l < len-1 ; l++)
-            {
-                printf("%c", matriz_bwt[k][l]);
-            }
-        }
-
-       
+        File.write(matriz_bwt[i],"texto.txt");
     }
-    
-    // char matriz_transformada[len];
-    // for(int i = 0 ; i < len ; i++)
-    // {
-    //     matriz_transformada[i] = matriz_bwt[i][len-1];
-    // }
+    return 0;
+    //printf("%c \n",matriz_bwt[i][len-1]); bwt
+}
 
-
-// void move_last_character_to_front(char *str) {
-//     int len = strlen(str);
-//     if (len > 0) {
-//         char lastChar = str[len - 1];
-//         for (int i = len - 1; i > 0; i--) {
-//             str[i] = str[i - 1];
-//         }
-//         str[0] = lastChar;
-//     }
-// }
-     return 0;
+void move_last_character_to_front(char *str) {
+    int len = strlen(str);
+    if (len > 0) {
+        char lastChar = str[len - 1];
+        for (int i = len - 1; i > 0; i--) {
+            str[i] = str[i - 1];
+        }
+        str[0] = lastChar;
+    }
 }

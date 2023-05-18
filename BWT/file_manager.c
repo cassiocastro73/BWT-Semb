@@ -2,7 +2,6 @@
 #include "string.h"
 
 char file_text[MAX_FILE_SIZE];
-
 /** @brief Reads a file and returns its contents 
  *  @param[in] file_name The name of the file to be read
  *  @return @p Success if the reading was successful, otherwise, it returns @p ERROR
