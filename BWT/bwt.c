@@ -16,7 +16,7 @@
 #include "file_manager.h"
 
 void runLengthEncoding(char* input) {
-    int length = strlen(input);
+      int length = strlen(input);
     
     if (length == 0) {
         printf("String vazia.\n");
@@ -30,7 +30,11 @@ void runLengthEncoding(char* input) {
         if (input[i] == currentChar) {
             count++;
         } else {
-            printf("%c%d", currentChar, count);
+            if (count > 1) {
+                printf("%c%d", currentChar, count);
+            } else {
+                printf("%c", currentChar);
+            }
             currentChar = input[i];
             count = 1;
         }
