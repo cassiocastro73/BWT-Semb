@@ -14,6 +14,30 @@
 
 #include "bwt.h"
 #include "file_manager.h"
+
+void runLengthEncoding(char* input) {
+    int length = strlen(input);
+    
+    if (length == 0) {
+        printf("String vazia.\n");
+        return;
+    }
+    
+    char currentChar = input[0];
+    int count = 1;
+    
+    for (int i = 1; i <= length; i++) {
+        if (input[i] == currentChar) {
+            count++;
+        } else {
+            printf("%c%d", currentChar, count);
+            currentChar = input[i];
+            count = 1;
+        }
+    }
+    
+    printf("\n");
+}
 int comparar_strings(const void* a, const void* b) {
     const char* str1 = *(const char**)a;
     const char* str2 = *(const char**)b;
@@ -91,16 +115,17 @@ uint8_t bwt(char *input_text) {
 
     // Ordena as linhas da matriz
     qsort(ponteiros, len, sizeof(char*), comparar_strings);
-    File.write("\n","texto.txt");
-    File.write("\n","texto.txt");
+    // File.write("\n","texto.txt");
+    // File.write("\n","texto.txt");
     char pega_ultima_coluna[len];
-    for(int i = 0 ; i < len-1 ; i++)
+    for(int i = 0 ; i < len ; i++)
     {
-        pega_ultima_coluna[i] = ponteiros[i][len-1];
-        printf("%s\n",ponteiros[i]);
+       pega_ultima_coluna[i] = ponteiros[i][len-1];
+       //printf("%c",pega_ultima_coluna[i]);
        
     }
-     File.write(pega_ultima_coluna,"texto.txt");
+    runLengthEncoding(pega_ultima_coluna);
+    //File.write(pega_ultima_coluna,"texto.text");
     
     return 0;
 }
