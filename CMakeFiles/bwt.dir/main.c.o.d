@@ -54,4 +54,5 @@ CMakeFiles/bwt.dir/main.c.o: /home/jontz/Documents/Git/BWT-Semb/main.c \
  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h /usr/include/alloca.h \
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+ /home/jontz/Documents/Git/BWT-Semb/BWT/file_manager.h \
  /home/jontz/Documents/Git/BWT-Semb/BWT/file_manager.h

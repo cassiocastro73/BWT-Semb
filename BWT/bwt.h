@@ -5,8 +5,9 @@
 #include <string.h>
 #include <stdlib.h>
 #include <stdio.h>
-//#include "FileManager/file_manager.h"
-//extern char file_text[MAX_FILE_SIZE];
+#include "file_manager.h"
+
+#define MAX_LENGTH 2000
 uint8_t bwt(char *input_text);
 
 

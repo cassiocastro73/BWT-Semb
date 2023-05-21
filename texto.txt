@@ -1,8 +1,29 @@
 $BANANA
+Permutação BWT:
 A$BANAN
 NA$BANA
 ANA$BAN
 NANA$BA
 ANANA$B
 BANANA$
+
+
+
+Organização da Matriz em ordem alfabetica:
 $BANANA
+A$BANAN
+ANA$BAN
+ANANA$B
+BANANA$
+NA$BANA
+NANA$BA
+
+
+Resultado BWT (Captura da ultima coluna apos a organização):
+ANNB$AA
+
+Resultado do RL(Encoder):
+AN2B$A2
+
+Resultado do RL(Decoder):
+ANBBB$A
