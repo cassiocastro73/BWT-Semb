@@ -62,6 +62,9 @@ uint8_t main(int argc, char **argv)
     bwt(file_text);
     return SUCESS;
 }
+
+
+
 #endif
 
 

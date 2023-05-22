@@ -18,6 +18,16 @@
 #include "bwt.h"
 char RLE_ENCODER[200];
 #define DEBUG
+///////////////////////////////////////////////////////////////////////////////
+void copyStringToMatrixColumn(char **matrix, const char* string, int column);
+void printStringMatrix(char **matrix);
+void shiftStringMatrix(char **matrix,int size, char *newElement);
+void shiftMatrixRight(char **matrix, int size) ;
+void deleteMatrixColumn(char **matrix, int column, int size);
+///////////////////////////////////////////////////////////////////////////////
+
+void preencherMatrizEmColunas(char** matriz, char *bwt_final, char *bwt_first_column);
+void addElementToStringMatrix(char **matrix,  char* newElement);
 
 void runLengthDecoding(char* input) {
     int length = strlen(input);
@@ -106,11 +116,11 @@ void runLengthEncoding(char* input)
 int compare_string(const void* a, const void* b) {
     const char* str1 = *(const char**)a;
     const char* str2 = *(const char**)b;
-
+   // printf("%s + %s \n",str1,str2);
     return strcmp(str1, str2);
 }
  
-/**
+/** TODO: TROCAR OS NOMES DAS VARIÁVEIS
  * @brief Building...
  * @param[in] input_text Building...
  * @return Building...
@@ -155,9 +165,14 @@ uint8_t bwt(char *input_text) {
         }
     #endif
     char pega_ultima_coluna[len];
+    char pega_primeira_coluna[len];
     for(int i = 0 ; i < len ; i++)
     {
        pega_ultima_coluna[i] = ponteiros[i][len-1]; 
+    }
+    for(int i = 0 ; i < len ; i++)
+    {
+       pega_primeira_coluna[i] = ponteiros[i][0];
     }
 
     #ifdef DEBUG
@@ -169,5 +184,82 @@ uint8_t bwt(char *input_text) {
     #endif
 
     runLengthEncoding(pega_ultima_coluna);
+    preencherMatrizEmColunas(ponteiros,pega_ultima_coluna,pega_primeira_coluna);
+    
     return 0;
+}
+
+
+
+
+void preencherMatrizEmColunas(char** matriz, char *bwt_final, char *bwt_first_column) {
+    int numLinhas = 0;
+    int numColunas = 0;
+    int contador_adicao = 0;
+    // Calcular o número de linhas e colunas usando strlen na primeira linha
+    numColunas = strlen(matriz[0]);
+    numLinhas =  numColunas;
+    printf("\n");
+    copyStringToMatrixColumn(matriz,bwt_final,0);
+    copyStringToMatrixColumn(matriz,bwt_first_column,1);
+    
+    for(int i = numColunas; i > 1; i--)
+    {
+        deleteMatrixColumn(matriz,i,numColunas);
+    }
+    
+    for(int i = 0; i < numColunas ;i++ )
+    {
+        qsort(matriz,numColunas,sizeof(char*),compare_string);
+        shiftMatrixRight(matriz,numColunas);
+        copyStringToMatrixColumn(matriz,bwt_final,0);
+        printStringMatrix(matriz);
+    }
+    qsort(matriz,numColunas,sizeof(char*),compare_string);
+   
+    printStringMatrix(matriz);
+
+}
+
+
+
+#include <stdio.h>
+#include <string.h>
+
+
+void copyStringToMatrixColumn(char **matrix, const char* string, int column) {
+    int length = strlen(string);
+    for (int i = 0; i < length; i++) {
+        matrix[i][column] = string[i];
+    }
+}
+
+void printStringMatrix(char **matrix) {
+    size_t rows = strlen(matrix[0]);
+    for (int i = 0; i < rows; i++) {
+        for (int j = 0; j < rows; j++) {
+            printf("%c ", matrix[i][j]);
+        }
+        printf("\n");
+    }
+
+    printf("\n");
+}
+
+void shiftMatrixRight(char **matrix, int size) {
+    for (int i = 0; i < size; i++) {
+        for (int j = size - 1; j > 0; j--) {
+            matrix[i][j] = matrix[i][j - 1];
+        }
+        matrix[i][0] = ' ';  // Preenche a primeira coluna com um espaço em branco
+    }
+}
+
+void deleteMatrixColumn(char **matrix, int column, int size) {
+    for (int i = 0; i < size; i++) {
+        for (int j = column; j < size - 1; j++) {
+            matrix[i][j] = matrix[i][j + 1];
+        }
+        matrix[i][size - 1] = ' ';  // Preenche a última coluna com um espaço em branco
+    }
 }
