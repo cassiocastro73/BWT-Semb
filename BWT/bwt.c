@@ -16,7 +16,6 @@
 */
 
 #include "bwt.h"
-char RLE_ENCODER[200];
 #define DEBUG
 ///////////////////////////////////////////////////////////////////////////////
 void copyStringToMatrixColumn(char **matrix, const char* string, int column);
@@ -25,9 +24,10 @@ void shiftStringMatrix(char **matrix,int size, char *newElement);
 void shiftMatrixRight(char **matrix, int size) ;
 void deleteMatrixColumn(char **matrix, int column, int size);
 ///////////////////////////////////////////////////////////////////////////////
-
-void preencherMatrizEmColunas(char** matriz, char *bwt_final, char *bwt_first_column);
+void matrix_formatting(void);
+void preencherMatrizEmColunas(char** matrix_sorted, char *bwt_column, char *bwt_first_column);
 void addElementToStringMatrix(char **matrix,  char* newElement);
+///////////////////////////////////////////////////////////////////////////////
 
 void runLengthDecoding(char* input) {
     int length = strlen(input);
@@ -60,14 +60,6 @@ void runLengthDecoding(char* input) {
     }
     
     output[outputIndex] = '\0';
-    #ifdef DEBUG
-        File.write("\n","texto.txt");
-        File.write("\n","texto.txt");
-        File.write("Resultado do RL(Decoder):","texto.txt");
-        File.write("\n","texto.txt");
-        File.write(output,"texto.txt");
-    #endif
-    printf("Decoded Result: %s\n", output);
 }
 
 
@@ -131,9 +123,11 @@ uint8_t bwt(char *input_text) {
     char *ponteiros[MAX_LENGTH];
     char vetor_aux[MAX_LENGTH];
     strcpy(vetor_aux, input_text);
+
     File.write("\n","texto.txt");
     File.write("Permutação BWT:","texto.txt");
     File.write("\n","texto.txt");
+
     for(int i = 0; i < len; i++) {
         char lastChar = vetor_aux[len - 1];
         for (int j = len - 1; j > 0; j--) {
@@ -191,37 +185,49 @@ uint8_t bwt(char *input_text) {
 
 
 
-
-void preencherMatrizEmColunas(char** matriz, char *bwt_final, char *bwt_first_column) {
+/**
+ * @brief BWT Decompressor performs data decompression to return the original input
+ * @param[in] matriz The sorted bwt matrix
+ * @param[in] bwt_column The last column of the sorted matrix (BWT)
+ * @param[in] bwt_first_column The first column of the sorted array
+*/
+void preencherMatrizEmColunas(char** matrix_sorted, char *bwt_column, char *bwt_first_column) {
     int numLinhas = 0;
     int numColunas = 0;
     int contador_adicao = 0;
     // Calcular o número de linhas e colunas usando strlen na primeira linha
-    numColunas = strlen(matriz[0]);
+    numColunas = strlen(matrix_sorted[0]);
     numLinhas =  numColunas;
     printf("\n");
-    copyStringToMatrixColumn(matriz,bwt_final,0);
-    copyStringToMatrixColumn(matriz,bwt_first_column,1);
-    
+    copyStringToMatrixColumn(matrix_sorted,bwt_column,0);
+    copyStringToMatrixColumn(matrix_sorted,bwt_first_column,1);
+    File.write("\n","texto.txt");
     for(int i = numColunas; i > 1; i--)
     {
-        deleteMatrixColumn(matriz,i,numColunas);
+        deleteMatrixColumn(matrix_sorted,i,numColunas);
     }
-    
+    matrix_formatting();
+    for (int i = 0; i < numColunas; i++) {
+        File.write("\n","texto.txt");
+        File.write(matrix_sorted[i],"texto.txt");
+    }
+    matrix_formatting();
     for(int i = 0; i < numColunas ;i++ )
     {
-        qsort(matriz,numColunas,sizeof(char*),compare_string);
-        shiftMatrixRight(matriz,numColunas);
-        copyStringToMatrixColumn(matriz,bwt_final,0);
-        printStringMatrix(matriz);
+        qsort(matrix_sorted,numColunas,sizeof(char*),compare_string);
+        shiftMatrixRight(matrix_sorted,numColunas);
+        copyStringToMatrixColumn(matrix_sorted,bwt_column,0);
+        printStringMatrix(matrix_sorted);
     }
-    qsort(matriz,numColunas,sizeof(char*),compare_string);
-   
-    printStringMatrix(matriz);
-
+    qsort(matrix_sorted,numColunas,sizeof(char*),compare_string);
+    File.write("\n","texto.txt");
+    for (int i = 0; i < numColunas; i++) {
+        File.write("\n","texto.txt");
+        File.write(matrix_sorted[i],"texto.txt");
+    }
+    matrix_formatting();
+    printStringMatrix(matrix_sorted);
 }
-
-
 
 #include <stdio.h>
 #include <string.h>
@@ -229,7 +235,9 @@ void preencherMatrizEmColunas(char** matriz, char *bwt_final, char *bwt_first_co
 
 void copyStringToMatrixColumn(char **matrix, const char* string, int column) {
     int length = strlen(string);
-    for (int i = 0; i < length; i++) {
+    int numRows = strlen(matrix[0]);
+    int copyLength = (length < numRows) ? length : numRows;
+    for (int i = 0; i < copyLength; i++) {
         matrix[i][column] = string[i];
     }
 }
@@ -242,7 +250,6 @@ void printStringMatrix(char **matrix) {
         }
         printf("\n");
     }
-
     printf("\n");
 }
 
@@ -251,8 +258,14 @@ void shiftMatrixRight(char **matrix, int size) {
         for (int j = size - 1; j > 0; j--) {
             matrix[i][j] = matrix[i][j - 1];
         }
-        matrix[i][0] = ' ';  // Preenche a primeira coluna com um espaço em branco
+        matrix[i][0] = ' '; 
     }
+    
+    for (int i = 0; i < size; i++) {
+        File.write("\n","texto.txt");
+        File.write(matrix[i],"texto.txt");
+    }
+    matrix_formatting();
 }
 
 void deleteMatrixColumn(char **matrix, int column, int size) {
@@ -260,6 +273,21 @@ void deleteMatrixColumn(char **matrix, int column, int size) {
         for (int j = column; j < size - 1; j++) {
             matrix[i][j] = matrix[i][j + 1];
         }
-        matrix[i][size - 1] = ' ';  // Preenche a última coluna com um espaço em branco
+        matrix[i][size - 1] = ' '; 
     }
+}
+
+
+void matrix_formatting(void)
+{
+    File.write("\n","texto.txt");
+    File.write("-----------------------","texto.txt");
+}
+
+void send_text_msg(const char * msg)
+{
+    File.write("\n","texto.txt");
+    File.write("\n","texto.txt");
+    File.write("Resultado BWT (Captura da ultima coluna apos a organização):","texto.txt");
+    File.write("\n","texto.txt");
 }

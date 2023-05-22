@@ -6,8 +6,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include "file_manager.h"
-
-#define MAX_LENGTH 2000
+#define MAX_LENGTH 200
 uint8_t bwt(char *input_text);
 
 

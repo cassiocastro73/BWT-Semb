@@ -1,29 +1,391 @@
-$BANANA
+$Aformigaepequena
 PermutaÃ§Ã£o BWT:
-A$BANAN
-NA$BANA
-ANA$BAN
-NANA$BA
-ANANA$B
-BANANA$
+a$Aformigaepequen
+na$Aformigaepeque
+ena$Aformigaepequ
+uena$Aformigaepeq
+quena$Aformigaepe
+equena$Aformigaep
+pequena$Aformigae
+epequena$Aformiga
+aepequena$Aformig
+gaepequena$Aformi
+igaepequena$Aform
+migaepequena$Afor
+rmigaepequena$Afo
+ormigaepequena$Af
+formigaepequena$A
+Aformigaepequena$
 
 
 
 OrganizaÃ§Ã£o da Matriz em ordem alfabetica:
-$BANANA
-A$BANAN
-ANA$BAN
-ANANA$B
-BANANA$
-NA$BANA
-NANA$BA
+$Aformigaepequena
+Aformigaepequena$
+a$Aformigaepequen
+aepequena$Aformig
+ena$Aformigaepequ
+epequena$Aformiga
+equena$Aformigaep
+formigaepequena$A
+gaepequena$Aformi
+igaepequena$Aform
+migaepequena$Afor
+na$Aformigaepeque
+ormigaepequena$Af
+pequena$Aformigae
+quena$Aformigaepe
+rmigaepequena$Afo
+uena$Aformigaepeq
 
 
 Resultado BWT (Captura da ultima coluna apos a organizaÃ§Ã£o):
-ANNB$AA
+a$nguapAimrefeeoqV‘ý
 
 Resultado do RL(Encoder):
-AN2B$A2
+a$nguapAimrefe2oqV‘ý
 
-Resultado do RL(Decoder):
-ANBBB$A
+-----------------------
+a$               
+$A               
+na               
+ga               
+ue               
+ae               
+pe               
+Af               
+ig               
+mi               
+rm               
+en               
+fo               
+ep               
+eq               
+or               
+qu               
+-----------------------
+ $A              
+ Af              
+ a$              
+ ae              
+ en              
+ ep              
+ eq              
+ fo              
+ ga              
+ ig              
+ mi              
+ na              
+ or              
+ pe              
+ qu              
+ rm              
+ ue              
+-----------------------
+ $Af             
+ Afo             
+ a$A             
+ aep             
+ ena             
+ epe             
+ equ             
+ for             
+ gae             
+ iga             
+ mig             
+ na$             
+ orm             
+ peq             
+ que             
+ rmi             
+ uen             
+-----------------------
+ $Afo            
+ Afor            
+ a$Af            
+ aepe            
+ ena$            
+ epeq            
+ eque            
+ form            
+ gaep            
+ igae            
+ miga            
+ na$A            
+ ormi            
+ pequ            
+ quen            
+ rmig            
+ uena            
+-----------------------
+ $Afor           
+ Aform           
+ a$Afo           
+ aepeq           
+ ena$A           
+ epequ           
+ equen           
+ formi           
+ gaepe           
+ igaep           
+ migae           
+ na$Af           
+ ormig           
+ peque           
+ quena           
+ rmiga           
+ uena$           
+-----------------------
+ $Aform          
+ Aformi          
+ a$Afor          
+ aepequ          
+ ena$Af          
+ epeque          
+ equena          
+ formig          
+ gaepeq          
+ igaepe          
+ migaep          
+ na$Afo          
+ ormiga          
+ pequen          
+ quena$          
+ rmigae          
+ uena$A          
+-----------------------
+ $Aformi         
+ Aformig         
+ a$Aform         
+ aepeque         
+ ena$Afo         
+ epequen         
+ equena$         
+ formiga         
+ gaepequ         
+ igaepeq         
+ migaepe         
+ na$Afor         
+ ormigae         
+ pequena         
+ quena$A         
+ rmigaep         
+ uena$Af         
+-----------------------
+ $Aformig        
+ Aformiga        
+ a$Aformi        
+ aepequen        
+ ena$Afor        
+ epequena        
+ equena$A        
+ formigae        
+ gaepeque        
+ igaepequ        
+ migaepeq        
+ na$Aform        
+ ormigaep        
+ pequena$        
+ quena$Af        
+ rmigaepe        
+ uena$Afo        
+-----------------------
+ $Aformiga       
+ Aformigae       
+ a$Aformig       
+ aepequena       
+ ena$Aform       
+ epequena$       
+ equena$Af       
+ formigaep       
+ gaepequen       
+ igaepeque       
+ migaepequ       
+ na$Aformi       
+ ormigaepe       
+ pequena$A       
+ quena$Afo       
+ rmigaepeq       
+ uena$Afor       
+-----------------------
+ $Aformigae      
+ Aformigaep      
+ a$Aformiga      
+ aepequena$      
+ ena$Aformi      
+ epequena$A      
+ equena$Afo      
+ formigaepe      
+ gaepequena      
+ igaepequen      
+ migaepeque      
+ na$Aformig      
+ ormigaepeq      
+ pequena$Af      
+ quena$Afor      
+ rmigaepequ      
+ uena$Aform      
+-----------------------
+ $Aformigaep     
+ Aformigaepe     
+ a$Aformigae     
+ aepequena$A     
+ ena$Aformig     
+ epequena$Af     
+ equena$Afor     
+ formigaepeq     
+ gaepequena$     
+ igaepequena     
+ migaepequen     
+ na$Aformiga     
+ ormigaepequ     
+ pequena$Afo     
+ quena$Aform     
+ rmigaepeque     
+ uena$Aformi     
+-----------------------
+ $Aformigaepe    
+ Aformigaepeq    
+ a$Aformigaep    
+ aepequena$Af    
+ ena$Aformiga    
+ epequena$Afo    
+ equena$Aform    
+ formigaepequ    
+ gaepequena$A    
+ igaepequena$    
+ migaepequena    
+ na$Aformigae    
+ ormigaepeque    
+ pequena$Afor    
+ quena$Aformi    
+ rmigaepequen    
+ uena$Aformig    
+-----------------------
+ $Aformigaepeq   
+ Aformigaepequ   
+ a$Aformigaepe   
+ aepequena$Afo   
+ ena$Aformigae   
+ epequena$Afor   
+ equena$Aformi   
+ formigaepeque   
+ gaepequena$Af   
+ igaepequena$A   
+ migaepequena$   
+ na$Aformigaep   
+ ormigaepequen   
+ pequena$Aform   
+ quena$Aformig   
+ rmigaepequena   
+ uena$Aformiga   
+-----------------------
+ $Aformigaepequ  
+ Aformigaepeque  
+ a$Aformigaepeq  
+ aepequena$Afor  
+ ena$Aformigaep  
+ epequena$Aform  
+ equena$Aformig  
+ formigaepequen  
+ gaepequena$Afo  
+ igaepequena$Af  
+ migaepequena$A  
+ na$Aformigaepe  
+ ormigaepequena  
+ pequena$Aformi  
+ quena$Aformiga  
+ rmigaepequena$  
+ uena$Aformigae  
+-----------------------
+ $Aformigaepeque 
+ Aformigaepequen 
+ a$Aformigaepequ 
+ aepequena$Aform 
+ ena$Aformigaepe 
+ epequena$Aformi 
+ equena$Aformiga 
+ formigaepequena 
+ gaepequena$Afor 
+ igaepequena$Afo 
+ migaepequena$Af 
+ na$Aformigaepeq 
+ ormigaepequena$ 
+ pequena$Aformig 
+ quena$Aformigae 
+ rmigaepequena$A 
+ uena$Aformigaep 
+-----------------------
+ $Aformigaepequen
+ Aformigaepequena
+ a$Aformigaepeque
+ aepequena$Aformi
+ ena$Aformigaepeq
+ epequena$Aformig
+ equena$Aformigae
+ formigaepequena$
+ gaepequena$Aform
+ igaepequena$Afor
+ migaepequena$Afo
+ na$Aformigaepequ
+ ormigaepequena$A
+ pequena$Aformiga
+ quena$Aformigaep
+ rmigaepequena$Af
+ uena$Aformigaepe
+-----------------------
+ $Aformigaepequen
+ Aformigaepequena
+ a$Aformigaepeque
+ aepequena$Aformi
+ ena$Aformigaepeq
+ epequena$Aformig
+ equena$Aformigae
+ formigaepequena$
+ gaepequena$Aform
+ igaepequena$Afor
+ migaepequena$Afo
+ na$Aformigaepequ
+ ormigaepequena$A
+ pequena$Aformiga
+ quena$Aformigaep
+ rmigaepequena$Af
+ uena$Aformigaepe
+-----------------------
+ $Aformigaepequen
+ Aformigaepequena
+ a$Aformigaepeque
+ aepequena$Aformi
+ ena$Aformigaepeq
+ epequena$Aformig
+ equena$Aformigae
+ formigaepequena$
+ gaepequena$Aform
+ igaepequena$Afor
+ migaepequena$Afo
+ na$Aformigaepequ
+ ormigaepequena$A
+ pequena$Aformiga
+ quena$Aformigaep
+ rmigaepequena$Af
+ uena$Aformigaepe
+-----------------------
+
+$Aformigaepequena
+Aformigaepequena$
+a$Aformigaepequen
+aepequena$Aformig
+ena$Aformigaepequ
+epequena$Aformiga
+equena$Aformigaep
+formigaepequena$A
+gaepequena$Aformi
+igaepequena$Aform
+migaepequena$Afor
+na$Aformigaepeque
+ormigaepequena$Af
+pequena$Aformigae
+quena$Aformigaepe
+rmigaepequena$Afo
+uena$Aformigaepeq
+-----------------------
