@@ -2,6 +2,8 @@
 #include <stdint.h>
 #include "BWT/bwt.h"
 #include "BWT/file_manager.h"
+#include <time.h>
+#include <sys/resource.h>
 //#define RLE_ISOLADO
 #define BWT_RUN
 #define SUCESS (0)
@@ -48,7 +50,8 @@ void runLengthEncodingIsolado(char* input)
 uint8_t main(uint8_t argc, char **argv)
 {
     File.read("texto.txt");
-    runLengthEncodingIsolado("$Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris a felis ut lorem porttitor tristique a ac nulla. Aliquam gravida auctor ipsum, vitae gravida odio congue ut. Curabitur sed scelerisque eros. Fusce dictum quam nec purus faucibus, a consequat dolor vestibulum. Maecenas nec felis eget diam mattis dignissim a a mauris. Etiam gravida tristique augue, id consectetur tortor mollis eu. Sed fringilla ipsum nec est gravida, vitae interdum neque bibendum.Donec nec ex quis justo varius lobortis id non mi. Phasellus at dolor arcu. Sed tempus justo at turpis finibus, in tristique erat tincidunt. Vivamus egestas magna a tellus aliquam vestibulum. Nulla non aliquet massa. Fusce a turpis vestibulum, gravida sapien id, semper urna. Etiam et nisi tortor. Curabitur et velit at metus luctus efficitur. Pellentesque at pharetra leo, at faucibus nunc. Donec fringilla felis nec vestibulum vestibulum. Quisque feugiat erat at dapibus consectetur. Nam interdum erat eu ligula fermentum, a posuere leo pharetra. Maecenas interdum justo et ipsum tincidunt varius. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In pharetra justo sit amet nisi cursus, a semper nunc aliquam. Fusce tincidunt rutrum odio, a feugiat nulla. Duis vulputate metus vitae magna dignissim, sed facilisis orci lobortis. Nunc feugiat magna nec mi laoreet, et scelerisque lacus finibus. Curabitur sagittis felis ut arcu laoreet, eu fermentum orci eleifend. Sed dignissim gravida mi id facilisis. Aenean sed bibendum neque. Suspendisse fringilla ipsum non gravida pharetra. Suspendisse nec metus enim. Vestibulum vel faucibus metus, eget eleifend nisi. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas  Integer fermentum fringilla dui at elementum. Nulla non interdum urna. Aliquam aliquam felis nec nunc ultricies, eget lobortis mi tempus. Integer eu libero vel arcu aliquet elementum. Nunc varius viverra urna, vel aliquet ligula condimentum ac");
+    //runLengthEncodingIsolado("$Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris a felis ut lorem porttitor tristique a ac nulla. Aliquam gravida auctor ipsum, vitae gravida odio congue ut. Curabitur sed scelerisque eros. Fusce dictum quam nec purus faucibus, a consequat dolor vestibulum. Maecenas nec felis eget diam mattis dignissim a a mauris. Etiam gravida tristique augue, id consectetur tortor mollis eu. Sed fringilla ipsum nec est gravida, vitae interdum neque bibendum.Donec nec ex quis justo varius lobortis id non mi. Phasellus at dolor arcu. Sed tempus justo at turpis finibus, in tristique erat tincidunt. Vivamus egestas magna a tellus aliquam vestibulum. Nulla non aliquet massa. Fusce a turpis vestibulum, gravida sapien id, semper urna. Etiam et nisi tortor. Curabitur et velit at metus luctus efficitur. Pellentesque at pharetra leo, at faucibus nunc. Donec fringilla felis nec vestibulum vestibulum. Quisque feugiat erat at dapibus consectetur. Nam interdum erat eu ligula fermentum, a posuere leo pharetra. Maecenas interdum justo et ipsum tincidunt varius. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In pharetra justo sit amet nisi cursus, a semper nunc aliquam. Fusce tincidunt rutrum odio, a feugiat nulla. Duis vulputate metus vitae magna dignissim, sed facilisis orci lobortis. Nunc feugiat magna nec mi laoreet, et scelerisque lacus finibus. Curabitur sagittis felis ut arcu laoreet, eu fermentum orci eleifend. Sed dignissim gravida mi id facilisis. Aenean sed bibendum neque. Suspendisse fringilla ipsum non gravida pharetra. Suspendisse nec metus enim. Vestibulum vel faucibus metus, eget eleifend nisi. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas  Integer fermentum fringilla dui at elementum. Nulla non interdum urna. Aliquam aliquam felis nec nunc ultricies, eget lobortis mi tempus. Integer eu libero vel arcu aliquet elementum. Nunc varius viverra urna, vel aliquet ligula condimentum ac");
+    runLengthEncodingIsolado("$LOREMIPSUMDOLORSITAMET,CONSECTETURADIPISCINGELIT.MAURISAFELISUTLOREMPORTTITORTRISTIQUEAACNULLA.ALIQUAMGRAVIDAAUCTORIPSUM,VITAEGRAVIDAODIOCONGUEUT.CURABITURSEDSCELERISQUEEROS.FUSCEDICTUMQUAMNECPURUSFAUCIBUS,ACONSEQUATDOLORVESTIBULUM.MAECENASNECFELISEGETDIAMMATTISDIGNISSIMAAMAURIS.ETIAMGRAVIDATRISTIQUEAUGUE,IDCONSECTETURTORTORMOLLISEU.SEDFRINGILLAIPSUMNECESTGRAVIDA,VITAEINTERDUMNEQUEBIBENDUM.DONECNECEXQUISJUSTOVARIUSLOBORTISIDNONMI.PHASELLUSATDOLORARCU.SEDTEMPUSJUSTOATTURPISFINIBUS,INTRISTIQUEERATTINCIDUNT.VIVAMUSEGESTASMAGNATELLUSALIQUAMVESTIBULUM.NULLANONALIQUETMASSA.FUSCEATURPISVESTIBULUM,GRAVIDASAPIENID,SEMPERURNA.ETIAMETNISITORTOR.CURABITURETVELITATMETUSLUCTUSEFFICITUR.PELLENTESQUEATPHARETRALEO,ATFAUCIBUSNUNC.DONECFRINGILLAFELISNECVESTIBULUMVESTIBULUM.QUISQUEFEUGIATERATATDAPIBUSCONSECTETUR.NAMINTERDUMERATEULIGULAFERMENTUM,APOSUERELAOPHARETRA.MAECENASINTERDUMJUSTOETIPSUMTINCIDUNTVARIUS.VESTIBULUMANTEIPSUMPRIMISINFAUCIBUSORCILUCTUSETULTRICESPOSUERECUBILIACURAE;INPHARETRAJUSTOSITAMETNISICURSUS,ASEMPERNUNCALIQUAM.FUSCETINCIDUNTRUTRUMODIO,AFEUGIATNULLA.DUISVULPUTATEMETUSVITAEMAGNADIGNISSIM,SEDFACILISISORCILOBORTIS.NUNCFEUGIATMAGNANECMILAOREET,ETSCELERISQUELACUSFINIBUS.CURABITURSAGITTISFELISUTARCULAOREET,EUFERMENTUMORCIELEIFEND.SEDDIGNISSIMGRAVIDAMIIDFACILISIS.AENEANSEDBIBENDUMNEQUE.SUSPENDISSEFRINGILLAIPSUMNONGRAVIDAPHARETRA.SUSPENDISSENECMETUSENIM.VESTIBULUMVELFAUCIBUSMETUS,EGELEIFENDNISI.PELLENTESQUEHABITANTMORBITRISTIQUESENECTUSETNETUSETMALESUADAFAMESACTURPISEGESTAS.INTEGERFERMENTUMFRINGILLADUIATELEMENTUM.NULLANONINTERDUMURNA.ALIQUAMALIQUAMFELISNECNUNCULTRICIES,EGETLOBORTISMITEMPUS.INTEGEREULIBEROVELARCUALIQUETELEMENTUM.NUNCVARIUSVIVERRAURNA,VELALIQUETLIGULACONDIMENTUMAC.VESTIBULUMVELFAUCIB");
     return SUCESS;
 }
 
@@ -58,13 +61,20 @@ uint8_t main(uint8_t argc, char **argv)
 
 uint8_t main(int argc, char **argv)
 {
+    clock_t start, end;
+    double cpu_time_used = 0;
+    start = clock();
+    
     File.read("texto.txt");
     bwt(file_text);
+    end = clock();
+    cpu_time_used = ((double)(end-start))/CLOCKS_PER_SEC;
+    printf("Tempo de exeucação em segundos %f \n", cpu_time_used);
+   
     return SUCESS;
 }
 
-
-
+/**
+ * @brief Utilizando a lib time.h para fazer a medição de tempo de execução do algoritmo
+*/
 #endif
-
-

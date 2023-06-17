@@ -55,4 +55,10 @@ CMakeFiles/bwt.dir/main.c.o: /home/jontz/Documents/Git/BWT-Semb/main.c \
  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h /usr/include/alloca.h \
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
  /home/jontz/Documents/Git/BWT-Semb/BWT/file_manager.h \
- /home/jontz/Documents/Git/BWT-Semb/BWT/file_manager.h
+ /home/jontz/Documents/Git/BWT-Semb/BWT/file_manager.h \
+ /usr/include/time.h /usr/include/x86_64-linux-gnu/bits/time.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h \
+ /usr/include/x86_64-linux-gnu/sys/resource.h \
+ /usr/include/x86_64-linux-gnu/bits/resource.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_rusage.h
