@@ -58,8 +58,9 @@ uint8_t main(uint8_t argc, char **argv)
 
 uint8_t main(int argc, char **argv)
 {
-    File.read("texto.txt");
-    bwt(file_text);
+    //File.read("texto.txt");
+    // bwt(file_text);
+    bwt("$Donec nec ex quis justo varius lobortis id non mi. Phasellus at dolor arcu. Sed tempus justo at turpis finibus, in tristique erat tincidunt. Vivamus egestas magna a tellus aliquam vestibulum. Nulla non aliquet massa. Fusce a turpis vestibulum, gravida sapien id, semper urna. Etiam et nisi tortor. Curabitur et velit at metus luctus efficitur. Pellentesque at pharetra leo, at faucibus nunc. Donec fringilla felis nec vestibulum vestibulum. Quisque feugiat erat at dapibus consectetur. Nam interdum erat eu ligula fermentum, a posuere leo pharetra. Maecenas interdum justo et ipsum tincidunt varius. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In pharetra justo sit amet nisi cursus, a semper nunc aliquam. Fusce tincidunt rutrum odio, a feugiat nulla. Duis vulputate metus vitae magna dignissim, sed facilisis orci lobortis. Nunc feugiat magna nec mi laoreet, et scelerisque lacus finibus. Curabitur sagittis felis ut arcu laoreet, eu fermentum orci eleifend. Sed dignissim gravida mi id facilisis. Aenean sed bibendum neque. Suspendisse fringilla ipsum non gravida pharetra. Suspendisse nec metus enim.");
     return SUCESS;
 }
 #endif

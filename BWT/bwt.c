@@ -61,13 +61,13 @@ void runLengthDecoding(char* input) {
 }
 
 
-void runLengthEncoding(char* input) 
+int runLengthEncoding(char* input) 
 {
     int length = strlen(input);
     if (length == 0) 
     {
         printf("String vazia.\n");
-        return;
+        return -1;
     }
 
     char currentChar = input[0];
@@ -100,7 +100,8 @@ void runLengthEncoding(char* input)
         File.write(output,"texto.txt");
     #endif
     printf("Result: %s\n", output);
-    runLengthDecoding(output);
+    return 0;
+    //runLengthDecoding(output);
 }
 
 int compare_string(const void* a, const void* b) {
@@ -121,9 +122,7 @@ uint8_t bwt(char *input_text) {
     char *ponteiros[MAX_LENGTH];
     char vetor_aux[MAX_LENGTH];
     strcpy(vetor_aux, input_text);
-    File.write("\n","texto.txt");
-    File.write("Permutação BWT:","texto.txt");
-    File.write("\n","texto.txt");
+   
     for(int i = 0; i < len; i++) {
         char lastChar = vetor_aux[len - 1];
         for (int j = len - 1; j > 0; j--) {
@@ -133,12 +132,6 @@ uint8_t bwt(char *input_text) {
         strncpy(matriz_bwt[i], vetor_aux, len);
         matriz_bwt[i][len] = '\0';
         ponteiros[i] = matriz_bwt[i];
-       
-        if(i < len-1)
-        {
-            File.write(ponteiros[i],"texto.txt");
-        }
-        File.write("\n","texto.txt");
     }
 
     qsort(ponteiros, len, sizeof(char*), compare_string);
